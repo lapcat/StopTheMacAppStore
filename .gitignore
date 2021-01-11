@@ -1,0 +1,6 @@
+.DS_Store
+DerivedData/
+DEVELOPMENT_TEAM.xcconfig
+project.xcworkspace/
+xcshareddata/
+xcuserdata/

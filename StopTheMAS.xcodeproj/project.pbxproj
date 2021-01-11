@@ -1,0 +1,216 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		522DB9C4227CCB540013DFF5 /* JJMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 522DB9C3227CCB540013DFF5 /* JJMainMenu.m */; };
+		5232475F227CB982004010F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5232475B227CB982004010F5 /* main.m */; };
+		52324760227CB982004010F5 /* JJApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5232475C227CB982004010F5 /* JJApplicationDelegate.m */; };
+		52699C04227D2878006F536D /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 52699C03227D2878006F536D /* LICENSE.txt */; };
+		52989F99227DD2F2006A4E38 /* JJMainWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 52989F98227DD2F2006A4E38 /* JJMainWindow.m */; };
+		52CECB54227D26DD00E69FB4 /* JJLicenseWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CECB53227D26DD00E69FB4 /* JJLicenseWindow.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		522DB9C2227CCB540013DFF5 /* JJMainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJMainMenu.h; sourceTree = "<group>"; };
+		522DB9C3227CCB540013DFF5 /* JJMainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJMainMenu.m; sourceTree = "<group>"; };
+		52324757227CB982004010F5 /* StopTheMAS.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = StopTheMAS.entitlements; sourceTree = "<group>"; };
+		52324758227CB982004010F5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5232475A227CB982004010F5 /* JJApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJApplicationDelegate.h; sourceTree = "<group>"; };
+		5232475B227CB982004010F5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5232475C227CB982004010F5 /* JJApplicationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJApplicationDelegate.m; sourceTree = "<group>"; };
+		52324761227CBAE9004010F5 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		52324762227CBAE9004010F5 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
+		52324763227CBAE9004010F5 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		52545808227DE38C00B9863A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		52699C03227D2878006F536D /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		52989F97227DD2F2006A4E38 /* JJMainWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJMainWindow.h; sourceTree = "<group>"; };
+		52989F98227DD2F2006A4E38 /* JJMainWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJMainWindow.m; sourceTree = "<group>"; };
+		52CECB52227D26DD00E69FB4 /* JJLicenseWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJLicenseWindow.h; sourceTree = "<group>"; };
+		52CECB53227D26DD00E69FB4 /* JJLicenseWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJLicenseWindow.m; sourceTree = "<group>"; };
+		52E05AA3227CB87C008791E2 /* Stop The Mac App Store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stop The Mac App Store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		52324755227CB982004010F5 /* nonsource */ = {
+			isa = PBXGroup;
+			children = (
+				52324758227CB982004010F5 /* Info.plist */,
+				52324757227CB982004010F5 /* StopTheMAS.entitlements */,
+			);
+			path = nonsource;
+			sourceTree = SOURCE_ROOT;
+		};
+		52324759227CB982004010F5 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				5232475A227CB982004010F5 /* JJApplicationDelegate.h */,
+				5232475C227CB982004010F5 /* JJApplicationDelegate.m */,
+				52CECB52227D26DD00E69FB4 /* JJLicenseWindow.h */,
+				52CECB53227D26DD00E69FB4 /* JJLicenseWindow.m */,
+				522DB9C2227CCB540013DFF5 /* JJMainMenu.h */,
+				522DB9C3227CCB540013DFF5 /* JJMainMenu.m */,
+				52989F97227DD2F2006A4E38 /* JJMainWindow.h */,
+				52989F98227DD2F2006A4E38 /* JJMainWindow.m */,
+				5232475B227CB982004010F5 /* main.m */,
+			);
+			path = source;
+			sourceTree = SOURCE_ROOT;
+		};
+		52E05A9A227CB87C008791E2 = {
+			isa = PBXGroup;
+			children = (
+				52545808227DE38C00B9863A /* README.md */,
+				52699C03227D2878006F536D /* LICENSE.txt */,
+				52324763227CBAE9004010F5 /* Debug.xcconfig */,
+				52324761227CBAE9004010F5 /* Release.xcconfig */,
+				52324762227CBAE9004010F5 /* Shared.xcconfig */,
+				52324755227CB982004010F5 /* nonsource */,
+				52324759227CB982004010F5 /* source */,
+				52E05AA4227CB87C008791E2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52E05AA4227CB87C008791E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52E05AA3227CB87C008791E2 /* Stop The Mac App Store.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52E05AA2227CB87C008791E2 /* Stop The Mac App Store */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52E05AB4227CB87D008791E2 /* Build configuration list for PBXNativeTarget "Stop The Mac App Store" */;
+			buildPhases = (
+				52E05A9F227CB87C008791E2 /* Sources */,
+				52E05AA1227CB87C008791E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Stop The Mac App Store";
+			productName = "Stop The Mac App Store";
+			productReference = 52E05AA3227CB87C008791E2 /* Stop The Mac App Store.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52E05A9B227CB87C008791E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Jeff Johnson";
+				TargetAttributes = {
+					52E05AA2227CB87C008791E2 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 52E05A9E227CB87C008791E2 /* Build configuration list for PBXProject "StopTheMAS" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52E05A9A227CB87C008791E2;
+			productRefGroup = 52E05AA4227CB87C008791E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52E05AA2227CB87C008791E2 /* Stop The Mac App Store */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52E05AA1227CB87C008791E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52699C04227D2878006F536D /* LICENSE.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52E05A9F227CB87C008791E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52324760227CB982004010F5 /* JJApplicationDelegate.m in Sources */,
+				52CECB54227D26DD00E69FB4 /* JJLicenseWindow.m in Sources */,
+				52989F99227DD2F2006A4E38 /* JJMainWindow.m in Sources */,
+				522DB9C4227CCB540013DFF5 /* JJMainMenu.m in Sources */,
+				5232475F227CB982004010F5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		52E05AB2227CB87D008791E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52324762227CBAE9004010F5 /* Shared.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		52E05AB3227CB87D008791E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52324762227CBAE9004010F5 /* Shared.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		52E05AB5227CB87D008791E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52324763227CBAE9004010F5 /* Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		52E05AB6227CB87D008791E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52324761227CBAE9004010F5 /* Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52E05A9E227CB87C008791E2 /* Build configuration list for PBXProject "StopTheMAS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52E05AB2227CB87D008791E2 /* Debug */,
+				52E05AB3227CB87D008791E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52E05AB4227CB87D008791E2 /* Build configuration list for PBXNativeTarget "Stop The Mac App Store" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52E05AB5227CB87D008791E2 /* Debug */,
+				52E05AB6227CB87D008791E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52E05A9B227CB87C008791E2 /* Project object */;
+}
