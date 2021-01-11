@@ -108,7 +108,7 @@
 		52E05A9B227CB87C008791E2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 9999;
 				ORGANIZATIONNAME = "Jeff Johnson";
 				TargetAttributes = {
 					52E05AA2227CB87C008791E2 = {
