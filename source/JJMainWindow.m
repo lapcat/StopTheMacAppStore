@@ -11,7 +11,7 @@
 	[window setTitle:JJApplicationName];
 	NSView* contentView = [window contentView];
 	
-	NSString* intro = NSLocalizedString(@"Stop The Mac App Store registers itself as the default handler for Mac App Store URLs instead of the App Store app.\n\nIf you allow Safari to open a Mac App Store URL in Stop The Mac App Store, the app's page will then open in App Store. This lets you stop App Store from automatically opening.\n\nYou don't need to keep Stop The Mac App Store running. Safari will automatically launch Stop The Mac App Store, and Stop The Mac App Store will automatically terminate itself.\n\nStop The Mac App Store is free and open source. To support the developer, please consider buying the Safari extension StopTheMadness in the Mac App Store. Thanks!", nil);
+	NSString* intro = NSLocalizedString(@"Stop The Mac App Store registers itself as the default handler for Mac App Store URLs instead of the App Store app.\n\nIf you allow Safari to open a Mac App Store URL in Stop The Mac App Store, the app's page will then open in App Store. This lets you stop App Store from automatically opening.\n\nYou don't need to keep Stop The Mac App Store running. Safari will automatically launch Stop The Mac App Store, and Stop The Mac App Store will automatically terminate itself.\n\nStop The Mac App Store is free and open source. To support the developer, please consider buying the Safari extension StopTheMadness Pro in the Mac App Store. Thanks!", nil);
 	NSTextField* label = [NSTextField wrappingLabelWithString:intro];
 	[label setTranslatesAutoresizingMaskIntoConstraints:NO];
 	[contentView addSubview:label];

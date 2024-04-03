@@ -102,7 +102,7 @@ NSString* JJApplicationName;
 }
 
 -(void)openMacAppStore:(id)sender {
-	NSURL* url = [NSURL URLWithString:@"macappstore://itunes.apple.com/app/stopthemadness/id1376402589"];
+	NSURL* url = [NSURL URLWithString:@"macappstore://apps.apple.com/app/stopthemadness-pro/id6471380298"];
 	if (url != nil)
 		[self openMacAppStoreURL:url];
 	else
