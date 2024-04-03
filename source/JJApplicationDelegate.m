@@ -33,7 +33,8 @@ NSString* JJApplicationName;
 }
 
 -(void)openMacAppStoreURL:(nonnull NSURL*)url {
-	[[NSWorkspace sharedWorkspace] openURLs:@[url] withAppBundleIdentifier:@"com.apple.AppStore" options:NSWorkspaceLaunchAsync additionalEventParamDescriptor:nil launchIdentifiers:nil];
+	NSURL* appStoreURL = [NSURL fileURLWithPath:@"/System/Applications/App Store.app" isDirectory:YES];
+	[[NSWorkspace sharedWorkspace] openURLs:@[url] withApplicationAtURL:appStoreURL configuration:[NSWorkspaceOpenConfiguration configuration] completionHandler:nil];
 }
 
 #pragma mark NSApplicationDelegate
@@ -51,7 +52,7 @@ NSString* JJApplicationName;
 	if (_didOpenURLs)
 		return;
 	
-	CFStringRef bundleID = CFSTR("com.lapcatsoftware.StopTheMacAppStore");
+	CFStringRef bundleID = CFSTR("com.apple.AppStore");
 	NSArray<NSString*>* schemes = @[@"itms-apps", @"itms-appss", @"macappstore", @"macappstores"];
 	OSStatus status;
 	for (NSString* scheme in schemes) {
