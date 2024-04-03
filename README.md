@@ -1,12 +1,16 @@
 # Stop The Mac App Store
 
-Stop The Mac App Store is an app for macOS 11 Big Sur or later that automatically handles Mac App Store URLs instead of App Store app. If you allow Safari to open a Mac App Store URL in Stop The Mac App Store, the app's page will then open in App Store. This lets you stop App Store from automatically opening. Stop The Mac App Store also works with Safari Technology Preview.
+Stop The Mac App Store is an app for macOS that automatically handles Mac App Store URLs instead of App Store app. If you allow Safari to open a Mac App Store URL in Stop The Mac App Store, the app's page will then open in App Store. This lets you stop App Store from automatically opening. Stop The Mac App Store also works with Safari Technology Preview.
+
+On macOS Ventura or Sonoma, use the [latest release](https://github.com/lapcat/StopTheMacAppStore/releases/latest).
+
+On macOS Big Sur or Monterey, use [version 1.0 of Stop The Mac App Store](https://github.com/lapcat/StopTheMacAppStore/releases/tag/v1.0).
 
 On macOS Catalina or Mojave, this functionality is included in [version 2.2 of StopTheNews](https://github.com/lapcat/StopTheNews/releases/tag/v2.2).
 
 ## Installing
 
-1. Download the [latest release](https://github.com/lapcat/StopTheMacAppStore/releases/latest).
+1. Download Stop The Mac App Store.
 2. Unzip the downloaded `.zip` file.
 3. Move `Stop The Mac App Store.app` to your Applications folder.
 4. Open `Stop The Mac App Store.app`.
