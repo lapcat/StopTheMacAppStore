@@ -32,9 +32,9 @@ NSString* JJApplicationName;
 	[self performSelector:@selector(terminateIfNecessary) withObject:nil afterDelay:2.0];
 }
 
--(void)openMacAppStoreURL:(nonnull NSURL*)url {
+-(void)openMacAppStoreURL:(nonnull NSURL*)url completionHandler:(void (^ _Nullable)(NSRunningApplication *_Nullable app, NSError *_Nullable error))completionHandler {
 	NSURL* appStoreURL = [NSURL fileURLWithPath:@"/System/Applications/App Store.app" isDirectory:YES];
-	[[NSWorkspace sharedWorkspace] openURLs:@[url] withApplicationAtURL:appStoreURL configuration:[NSWorkspaceOpenConfiguration configuration] completionHandler:nil];
+	[[NSWorkspace sharedWorkspace] openURLs:@[url] withApplicationAtURL:appStoreURL configuration:[NSWorkspaceOpenConfiguration configuration] completionHandler:completionHandler];
 }
 
 #pragma mark NSApplicationDelegate
@@ -75,7 +75,7 @@ NSString* JJApplicationName;
 	_didOpenURLs = YES;
 	_urlCount += [urls count];
 	for (NSURL* url in urls) {
-		[self openMacAppStoreURL:url];
+		[self openMacAppStoreURL:url completionHandler:nil];
 		[self decrementURLCount];
 	}
 }
@@ -104,7 +104,14 @@ NSString* JJApplicationName;
 -(void)openMacAppStore:(id)sender {
 	NSURL* url = [NSURL URLWithString:@"macappstore://apps.apple.com/app/stopthemadness-pro/id6471380298"];
 	if (url != nil)
-		[self openMacAppStoreURL:url];
+		[self openMacAppStoreURL:url completionHandler:^(NSRunningApplication *_Nullable app, NSError *_Nullable error) {
+			if (app != nil)
+				dispatch_async(dispatch_get_main_queue(), ^{
+					[_mainWindow close];
+				});
+			else
+				NSLog(@"Launch error: %@", error);
+		}];
 	else
 		NSLog(@"MAS URL nil!");
 }
